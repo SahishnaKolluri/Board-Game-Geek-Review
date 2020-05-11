@@ -6,20 +6,31 @@ Dataset
 The dataset contains data on 80000 board games. The dataset contains several data points about each board game. Here’s a list of the interesting ones:
 
 name – name of the board game.
+
 playingtime – the playing time (given by the manufacturer).
+
 minplaytime – the minimum playing time (given by the manufacturer).
+
 maxplaytime – the maximum playing time (given by the manufacturer).
+
 minage – the minimum recommended age to play.
+
 users_rated – the number of users who rated the game.
+
 average_rating – the average rating given to the game by users. (0-10)
+
 total_weights – Number of weights given by users. Weight is a subjective measure that is made up by BoardGameGeek. It’s how “deep” or involved a game is. Here’s a full explanation.
+
 average_weight – the average of all the subjective weights (0-5).
+
 Machine Learning Algorithms Used For Predicting The Rating
+
 We have used the following 3 Machine Learning Algorithms in this project:
 
 k-means clustering
 Linear Regression
 RandomForest Regression
+
 k-means clustering
 K-means clustering is one of the simplest and popular unsupervised machine learning algorithms. Typically, unsupervised algorithms make inferences from datasets using only input vectors without referring to known, or labelled, outcomes. The objective of K-means is simple: group similar data points together and discover underlying patterns. To achieve this objective, K-means looks for a fixed number (k) of clusters in a dataset.” A cluster refers to a collection of data points aggregated together because of certain similarities. You’ll define a target number k, which refers to the number of centroids you need in the dataset. A centroid is the imaginary or real location representing the center of the cluster. Every data point is allocated to each of the clusters through reducing the in-cluster sum of squares. In other words, the K-means algorithm identifies k number of centroids, and then allocates every data point to the nearest cluster, while keeping the centroids as small as possible. The ‘means’ in the K-means refers to averaging of the data; that is, finding the centroid. How the K-means algorithm works To process the learning data, the K-means algorithm in data mining starts with a first group of randomly selected centroids, which are used as the beginning points for every cluster, and then performs iterative (repetitive) calculations to optimize the positions of the centroids It halts creating and optimizing clusters when either:
 
